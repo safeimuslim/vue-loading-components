@@ -1,0 +1,24 @@
+{
+  "name": "vue-loading-components",
+  "version": "1.0.0",
+  "description": "customable your vue loading component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/safeimuslim/vue-loading-components.git"
+  },
+  "keywords": [
+    "vue",
+    "loading",
+    "svg"
+  ],
+  "author": "Safei Muslim <safeydev@gmail.com> (http://www.safeimuslim.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/safeimuslim/vue-loading-components/issues"
+  },
+  "homepage": "https://github.com/safeimuslim/vue-loading-components#readme"
+}
