@@ -1,34 +1,58 @@
 # vue-loading-components
+Easy to use loading animations for React projects. Uses SVG animations from SamHerbert [SVG-Loaders](https://github.com/SamHerbert/SVG-Loaders) project.
 
-## Project setup
-```
-yarn install
-```
+## Installation
 
-### Compiles and hot-reloads for development
 ```
-yarn run serve
+npm i vue-loading-components
 ```
+or
 
-### Compiles and minifies for production
 ```
-yarn run build
+yarn add vue-loading-components
 ```
 
-### Run your tests
-```
-yarn run test
+## Demo
+
+[DEMO](https://safeimuslim.github.io/react-loading-components-demo/)
+
+## Loading Types
+* audio
+* ball_triangle
+* bars
+* circles
+* grid
+* hearts
+* oval
+* puff
+* rings
+* spinning_circles
+* tail_spin
+* three_dots
+
+## Example
+
+```javascript
+import React from 'react';
+import Loading from 'react-loading-components';
+
+const Example = () => (
+  <Loading type='ball_triangle' width={100} height={100} fill='#f44242' />
+);
+
+export default Example;
 ```
 
-### Lints and fixes files
-```
-yarn run lint
-```
+### Props
 
-### Run your unit tests
-```
-yarn run test:unit
-```
+| Name | Type | Default Value |
+|:------:|:------:|:---------------:|
+| type | String | audio |
+| fill | String | `#ffffff` |
+| height | Number or String | 64 (px) |
+| width | Number or String | 64 (px) |
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## License
+
+MIT
+
