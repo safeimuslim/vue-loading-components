@@ -1,8 +1,8 @@
-export default ({ props: { width, height, fill } }) => (
+<template>
   <svg
-    width={width || 64}
-    height={height || 64}
-    fill={fill || "#ffffff"}
+    :width="width"
+    :height="height"
+    :fill="fill"
     viewBox="0 0 140 64"
     xmlns="http://www.w3.org/2000/svg"
   >
@@ -34,4 +34,24 @@ export default ({ props: { width, height, fill } }) => (
     </path>
     <path d="M67.408 57.834l-23.01-24.98c-5.864-6.15-5.864-16.108 0-22.248 5.86-6.14 15.37-6.14 21.234 0L70 16.168l4.368-5.562c5.863-6.14 15.375-6.14 21.235 0 5.863 6.14 5.863 16.098 0 22.247l-23.007 24.98c-1.43 1.556-3.757 1.556-5.188 0z" />
   </svg>
-);
+</template>
+
+<script>
+export default {
+  name: "Hearts",
+  props: {
+    width: {
+      default: 64,
+      type: Number,
+    },
+    height: {
+      default: 64,
+      type: Number,
+    },
+    fill: {
+      default: '#ffffff',
+      type: String,
+    },
+  }
+};
+</script>

@@ -1,17 +1,13 @@
-export default ({ props }) => {
-  const width = props.width || 64;
-  const height = props.height || 64;
-  const fill = props.fill || "#ffffff";
-  return (
-    <svg
-      width={width}
-      height={height}
+<template>
+  <svg
+      :width="width"
+      :height="height"
       viewBox="0 0 58 58"
       xmlns="http://www.w3.org/2000/svg"
     >
       <g fill="none" fillRule="evenodd">
         <g transform="translate(2 1)" stroke={fill} strokeWidth="1.5">
-          <circle cx="42.601" cy="11.462" r="5" fillOpacity="1" fill={fill}>
+          <circle cx="42.601" cy="11.462" r="5" fillOpacity="1" :fill="fill">
             <animate
               attributeName="fill-opacity"
               begin="0s"
@@ -21,7 +17,7 @@ export default ({ props }) => {
               repeatCount="indefinite"
             />
           </circle>
-          <circle cx="49.063" cy="27.063" r="5" fillOpacity="0" fill={fill}>
+          <circle cx="49.063" cy="27.063" r="5" fillOpacity="0" :fill="fill">
             <animate
               attributeName="fill-opacity"
               begin="0s"
@@ -31,7 +27,7 @@ export default ({ props }) => {
               repeatCount="indefinite"
             />
           </circle>
-          <circle cx="42.601" cy="42.663" r="5" fillOpacity="0" fill={fill}>
+          <circle cx="42.601" cy="42.663" r="5" fillOpacity="0" :fill="fill">
             <animate
               attributeName="fill-opacity"
               begin="0s"
@@ -41,7 +37,7 @@ export default ({ props }) => {
               repeatCount="indefinite"
             />
           </circle>
-          <circle cx="27" cy="49.125" r="5" fillOpacity="0" fill={fill}>
+          <circle cx="27" cy="49.125" r="5" fillOpacity="0" :fill="fill">
             <animate
               attributeName="fill-opacity"
               begin="0s"
@@ -51,7 +47,7 @@ export default ({ props }) => {
               repeatCount="indefinite"
             />
           </circle>
-          <circle cx="11.399" cy="42.663" r="5" fillOpacity="0" fill={fill}>
+          <circle cx="11.399" cy="42.663" r="5" fillOpacity="0" :fill="fill">
             <animate
               attributeName="fill-opacity"
               begin="0s"
@@ -61,7 +57,7 @@ export default ({ props }) => {
               repeatCount="indefinite"
             />
           </circle>
-          <circle cx="4.938" cy="27.063" r="5" fillOpacity="0" fill={fill}>
+          <circle cx="4.938" cy="27.063" r="5" fillOpacity="0" :fill="fill">
             <animate
               attributeName="fill-opacity"
               begin="0s"
@@ -71,7 +67,7 @@ export default ({ props }) => {
               repeatCount="indefinite"
             />
           </circle>
-          <circle cx="11.399" cy="11.462" r="5" fillOpacity="0" fill={fill}>
+          <circle cx="11.399" cy="11.462" r="5" fillOpacity="0" :fill="fill">
             <animate
               attributeName="fill-opacity"
               begin="0s"
@@ -81,7 +77,7 @@ export default ({ props }) => {
               repeatCount="indefinite"
             />
           </circle>
-          <circle cx="27" cy="5" r="5" fillOpacity="0" fill={fill}>
+          <circle cx="27" cy="5" r="5" fillOpacity="0" :fill="fill">
             <animate
               attributeName="fill-opacity"
               begin="0s"
@@ -94,5 +90,24 @@ export default ({ props }) => {
         </g>
       </g>
     </svg>
-  );
+</template>
+
+<script>
+export default {
+  name: "SpinningCircles",
+  props: {
+    width: {
+      default: 64,
+      type: Number,
+    },
+    height: {
+      default: 64,
+      type: Number,
+    },
+    fill: {
+      default: '#ffffff',
+      type: String,
+    },
+  }
 };
+</script>

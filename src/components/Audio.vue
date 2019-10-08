@@ -1,9 +1,8 @@
-export default ({ props: { width, height, fill } }) => {
-  return (
-    <svg
-      width={width || 64}
-      height={height || 64}
-      fill={fill || "#ffffff"}
+<template>
+  <svg
+      :width="width"
+      :height="height"
+      :fill="fill"
       viewBox="0 0 55 80"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -50,5 +49,24 @@ export default ({ props: { width, height, fill } }) => {
         </rect>
       </g>
     </svg>
-  );
+</template>
+
+<script>
+export default {
+  name: "Audio",
+  props: {
+    width: {
+      default: 64,
+      type: Number,
+    },
+    height: {
+      default: 64,
+      type: Number,
+    },
+    fill: {
+      default: '#ffffff',
+      type: String,
+    },
+  }
 };
+</script>

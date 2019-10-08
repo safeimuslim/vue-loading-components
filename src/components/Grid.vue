@@ -1,8 +1,8 @@
-export default ({ props: { width, height, fill } }) => (
+<template>
   <svg
-    width={width || 64}
-    height={height || 64}
-    fill={fill || "#ffffff"}
+    :width="width"
+    :height="height"
+    :fill="fill"
     viewBox="0 0 105 105"
     xmlns="http://www.w3.org/2000/svg"
   >
@@ -97,4 +97,24 @@ export default ({ props: { width, height, fill } }) => (
       />
     </circle>
   </svg>
-);
+</template>
+
+<script>
+export default {
+  name: "Grid",
+  props: {
+    width: {
+      default: 64,
+      type: Number,
+    },
+    height: {
+      default: 64,
+      type: Number,
+    },
+    fill: {
+      default: '#ffffff',
+      type: String,
+    },
+  }
+};
+</script>

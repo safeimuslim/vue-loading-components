@@ -1,19 +1,15 @@
-export default ({ props }) => {
-  const width = props.width || 64;
-  const height = props.height || 64;
-  const fill = props.fill || "#ffffff";
-  return (
-    <svg
-      width={width}
-      height={height}
+<template>
+  <svg
+      :width="width"
+      :height="height"
       viewBox="0 0 38 38"
       xmlns="http://www.w3.org/2000/svg"
     >
       <defs>
         <linearGradient x1="8.042%" y1="0%" x2="65.682%" y2="23.865%" id="a">
-          <stop stopColor={fill} stopOpacity="0" offset="0%" />
-          <stop stopColor={fill} stopOpacity=".631" offset="63.146%" />
-          <stop stopColor={fill} offset="100%" />
+          <stop :stopColor="fill" stopOpacity="0" offset="0%" />
+          <stop :stopColor="fill" stopOpacity=".631" offset="63.146%" />
+          <stop :stopColor="fill" offset="100%" />
         </linearGradient>
       </defs>
       <g fill="none" fillRule="evenodd">
@@ -33,7 +29,7 @@ export default ({ props }) => {
               repeatCount="indefinite"
             />
           </path>
-          <circle fill={fill} cx="36" cy="18" r="1">
+          <circle :fill="fill" cx="36" cy="18" r="1">
             <animateTransform
               attributeName="transform"
               type="rotate"
@@ -46,5 +42,24 @@ export default ({ props }) => {
         </g>
       </g>
     </svg>
-  );
+</template>
+
+<script>
+export default {
+  name: "TailSpin",
+  props: {
+    width: {
+      default: 64,
+      type: Number,
+    },
+    height: {
+      default: 64,
+      type: Number,
+    },
+    fill: {
+      default: '#ffffff',
+      type: String,
+    },
+  }
 };
+</script>
