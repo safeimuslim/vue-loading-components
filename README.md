@@ -34,7 +34,7 @@ yarn add vue-loading-components
 
 ```javascript
 <template>
-  <Audio :fill="'yellow'" />
+  <Audio :width="64" :height="64" :fill="'yellow'" />
 </template>
 
 <script>
