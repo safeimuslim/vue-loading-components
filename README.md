@@ -16,38 +16,41 @@ yarn add vue-loading-components
 
 [DEMO](https://safeimuslim.github.io/react-loading-components-demo/)
 
-## Loading Types
-* audio
-* ball_triangle
-* bars
-* circles
-* grid
-* hearts
-* oval
-* puff
-* rings
-* spinning_circles
-* tail_spin
-* three_dots
+## Loading Components
+* Audio,
+* BallTriangle,
+* Bars,
+* Circles,
+* Grid,
+* Hearts,
+* Oval,
+* Puff,
+* Rings,
+* SpinningCircles,
+* TailSpin,
+* ThreeDots
 
 ## Example
 
 ```javascript
-import React from 'react';
-import Loading from 'react-loading-components';
+<template>
+  <Audio :fill="'yellow'" />
+</template>
 
-const Example = () => (
-  <Loading type='ball_triangle' width={100} height={100} fill='#f44242' />
-);
+<script>
+import { Audio } from 'vue-loading-components'
 
-export default Example;
+export default {
+  name: 'HelloWorld',
+  components: { Audio }
+}
+</script>
 ```
 
 ### Props
 
 | Name | Type | Default Value |
 |:------:|:------:|:---------------:|
-| type | String | audio |
 | fill | String | `#ffffff` |
 | height | Number or String | 64 (px) |
 | width | Number or String | 64 (px) |
