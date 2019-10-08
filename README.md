@@ -17,15 +17,15 @@ yarn add vue-loading-components
 [DEMO](https://safeimuslim.github.io/react-loading-components-demo/)
 
 ## Loading Components
-* Audio,
-* BallTriangle,
-* Bars,
-* Circles,
-* Grid,
-* Hearts,
-* Oval,
-* Puff,
-* Rings,
+* Audio
+* BallTriangle
+* Bars
+* Circles
+* Grid
+* Hearts
+* Oval
+* Puff
+* Rings
 * SpinningCircles,
 * TailSpin,
 * ThreeDots
