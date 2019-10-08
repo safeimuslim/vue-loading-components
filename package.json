@@ -1,7 +1,13 @@
 {
   "name": "vue-loading-components",
   "version": "0.1.0",
-  "private": false,
+  "description": "customable vue loading component",
+  "author": "Safei Muslim <safeydev@gmail.com> (http://www.safeimuslim.com)",
+  "license": "MIT",
+  "homepage": "https://github.com/safeimuslim/vue-loading-components#readme",
+  "bugs": {
+    "url": "https://github.com/safeimuslim/vue-loading-components/issues"
+  },
   "main": "dist/vue-loading-components.umd.js",
   "module": "dist/vue-loading-components.esm.js",
   "unpkg": "dist/vue-loading-components.min.js",
