@@ -1,7 +1,7 @@
 {
   "name": "vue-loading-components",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "main": "dist/vue-loading-components.umd.js",
   "module": "dist/vue-loading-components.esm.js",
   "unpkg": "dist/vue-loading-components.min.js",
